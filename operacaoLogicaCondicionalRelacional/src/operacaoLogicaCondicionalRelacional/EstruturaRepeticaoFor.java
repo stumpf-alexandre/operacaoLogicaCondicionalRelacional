@@ -2,14 +2,14 @@ package operacaoLogicaCondicionalRelacional;
 
 import java.util.Scanner;
 
-public class ExtruturaRepeticaoFor {
+public class EstruturaRepeticaoFor {
 	public static void main(String[] args) {
 		Scanner ler = new Scanner(System.in);//instanciando e criando o objeto scaner
-		//extrutura de repetição FOR, usada para percorrer uma quantidade de vezes a condição
+		//estrutura de repetição FOR, usada para percorrer uma quantidade de vezes a condição
 		int num;
 		
 		System.out.println("Digite 1 para imprimir numeros crescentes ou 2 para imprimir numeros decrescentes");
-		num = ler.nextInt();//entrada de dados
+		num = ler.nextInt();//entrada de dados do tleclado
 		ler.nextLine();//esvasiando o buffer do teclado
 		
 		switch (num) {
