@@ -9,7 +9,7 @@ public class EstruturaRepeticaoFor {
 		int num;
 		
 		System.out.println("Digite 1 para imprimir numeros crescentes ou 2 para imprimir numeros decrescentes");
-		num = ler.nextInt();//entrada de dados do tleclado
+		num = ler.nextInt();//entrada de dados do tleclado no visor da IDE Eclipse
 		ler.nextLine();//esvasiando o buffer do teclado
 		
 		switch (num) {
