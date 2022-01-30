@@ -29,11 +29,36 @@ public class EntradaDados {
 		//faz o calculo do mod da divisão
 		double resto = carroNum % pessoaNum;
 		
-		//informa os valores na tela da IDE
-		System.out.println("A divisão para as pessoas deu " + divisao + " carros e sobrou " + resto + " carro(s)");
+		//caixa de confirmação para visualisar o resultado
+		int resposta = JOptionPane.showConfirmDialog(null, "Deseja ver o resultado da divisão ?");
 		
-		//informa os valores em uma caixa de dialogo
-		JOptionPane.showMessageDialog(null, "A divisão para as pessoas deu " + divisao + " carros e sobrou " + resto + " carro(s)");
+		//validação para mostrar a resposta
+		if (resposta == 0) {
+
+			//informa os valores em uma caixa de dialogo
+			JOptionPane.showMessageDialog(null, "A divisão para as pessoas deu " + divisao + " carros e sobrou " + resto + " carro(s)");
+		
+			//informa os valores na tela da IDE
+			System.out.println("A divisão para as pessoas deu " + divisao + " carros e sobrou " + resto + " carro(s)");
+		}
+		else {
+			JOptionPane.showMessageDialog(null, "Não quiz ver os resultados");
+		}
+		
+		resposta = JOptionPane.showConfirmDialog(null, "Deseja ver o resto da divisão ?");
+		
+		//validação para mostrar a resposta
+		if (resposta == 0) {
+
+			//informa os valores em uma caixa de dialogo
+			JOptionPane.showMessageDialog(null, "O resto da divisão é: " + resto);
+				
+			//informa os valores na tela da IDE
+			System.out.println("O resto da divisão é: " + resto + " carro(s)");
+		}
+		else {
+			JOptionPane.showMessageDialog(null, "Não quiz ver os resultados");
+		}
 	}
 
 }
