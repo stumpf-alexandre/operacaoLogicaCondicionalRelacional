@@ -17,6 +17,5 @@ public class DivisaoComMod {
 		System.out.println("Foi dividido " + carr + " carros para " + pess + " pessoas");
 		System.out.println("Cada pessoa ficou com " + div + " carro(s)");
 		System.out.println("Sobrou exatamente " + resto + " carro(s).");
-		
 	}
 }
